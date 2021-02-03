@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-base;
+  font-size: 20px;
+  height: 100vh;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+@mixin section-setup {
+  display: flex;
+  height: 100vh;
+  justify-content: space-arounnd;
+  align-items: center;
+}
+
+.section-view {
+  @include section-setup();
+}
+
+.section-view-col {
+  @include section-setup();
+  flex-direction: column;
+}
+
+p {
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+
+.column-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.col-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 0.7em;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: $main-color;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $main-color;
+    transition: 0.2s;
+  }
+}
+
+@mixin button-setup {
+  background-color: #fff;
+  border: 1px solid $main-color;
+  color: $main-color;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  @include button-setup();
+  height: 120px;
+  width: 200px;
+  padding: 10px 30px;
+  font-weight: 100;
+}
