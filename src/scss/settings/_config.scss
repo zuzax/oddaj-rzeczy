@@ -6,16 +6,38 @@ body {
   font-family: $font-base;
   font-size: 20px;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .container {
-  width: 1440px;
+  width: 1840px;
   margin: 0 auto;
 }
+
+h1 {
+  font-size: 1.8em;
+  // margin: 10px 0;
+  padding: 30px 0;
+}
+
+label {
+  font-size: 0.7em;
+  padding-bottom: 30px;
+  font-weight: bolder;
+}
+
+// input {
+//   display: block;
+//   background-color: $accent-color;
+//   border: none;
+//   margin-top: 20px;
+//   border-bottom: 1px solid $main-color;
+//   height: 40px;
+// }
+
 @mixin section-setup {
   display: flex;
-  height: 100vh;
-  justify-content: space-arounnd;
+  height: calc(100vh - 95px);
   align-items: center;
 }
 
@@ -27,23 +49,18 @@ body {
   @include section-setup();
   flex-direction: column;
 }
-
-p {
-  font-size: 1.4em;
-  margin: 10px 0;
+.section-view-log {
+  @include section-setup();
+  justify-content: center;
 }
 
-.column-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.col-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section-contact {
+  @include section-setup();
+  height: 100vh;
+  justify-content: flex-end;
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 
 .main-nav {

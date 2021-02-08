@@ -1,0 +1,45 @@
+.wrapper-log {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-form {
+  background-color: $accent-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+@mixin form-data {
+  padding-bottom: 5px;
+  background-color: $accent-color;
+  border: none;
+  margin-top: 20px;
+  border-bottom: 1px solid $main-color;
+  height: 40px;
+}
+
+.form-data {
+  @include form-data();
+  display: block;
+  width: 200px;
+}
+
+.form-data-contact {
+  @include form-data();
+  background-color: none;
+  margin: 0 10px;
+  &:last-of-type {
+    display: block;
+    height: 80px;
+  }
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+}

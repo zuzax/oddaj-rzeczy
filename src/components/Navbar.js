@@ -6,7 +6,7 @@ const Navbar = () => {
             <nav className="main-nav">
                 <Link
                     activeClass="active"
-                    to="home"
+                    to="/"
                     smooth={true}
                     duration={500}
                     className="main-nav__link">

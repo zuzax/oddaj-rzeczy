@@ -1,0 +1,39 @@
+@mixin col-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.col-wrapper-stats {
+  @include col-wrapper();
+  background-image: url("../../assets/ThreeColumnsBackground.png");
+  height: 40%;
+}
+
+.col-wrapper-steps {
+  @include col-wrapper();
+  background-color: $accent-color;
+  height: 40%;
+}
+
+.column-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 100px;
+}
+
+.col-title {
+  font-size: 3em;
+  font-weight: lighter;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.col-par {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 20px 0;
+  line-height: 1.7em;
+}

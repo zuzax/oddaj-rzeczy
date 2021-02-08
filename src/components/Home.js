@@ -2,9 +2,8 @@ import React from 'react';
 import HomeHeader from './HomeHeader';
 import HomeStats from './HomeStats';
 import HomeAboutUs from './HomeAboutUs';
-import HomeFourColumns from './HomeFourColumns';
-import HomeThreeColumns from './HomeThreeColumns';
 import HomeBeneficiaries from './HomeBeneficiaries';
+import ContactForm from './ContactForm';
 
 
 const Home = () => {
@@ -12,10 +11,9 @@ const Home = () => {
         <>  
             <HomeHeader />
             <HomeStats />
-            <HomeThreeColumns />
-            <HomeFourColumns />
+            {/* <HomeAboutUs /> */}
             <HomeBeneficiaries />
-            <HomeAboutUs />
+            <ContactForm />
         </>
      );
 }
