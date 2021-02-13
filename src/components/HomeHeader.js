@@ -12,7 +12,8 @@ const HomeHeader = () => {
     return ( 
         <section className="section-view">
             <div className='hero__img' />
-            <div class="hero__content">       <h1>Zacznij pomagać!</h1>
+            <div className="hero__content">       
+                <h1>Zacznij pomagać!</h1>
                 <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
                 <Decoration />
                 <div className="hero__btns">
